@@ -12,6 +12,9 @@ class Notebook:
 
     author = None
 
+    def __init__(self, title):
+        self.title = title
+
     def who_is_author(self):
         print("the author of this note is %s" % self.author)
 
@@ -24,6 +27,16 @@ class Notebook:
         else:
             print(self.title)
             return self.title
+
+
+class Calculator:
+
+    def __init__(self, val=0):
+        self.value = val
+
+    def add(self, num):
+        self.value += num
+        return self.value
 
 
 if __name__ == '__main__':
